@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Math Calculator</h1>
+        <p>Enter a mathematical expression and get the result</p>
+      </header>
+
+      <main>
+        <div class="calculator-form">
+          <div class="input-group">
+            <label for="expression">Mathematical Expression:</label>
+            <input
+              type="text"
+              id="expression"
+              placeholder="e.g. 2 + 3 * 4"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="apiKey">API Key:</label>
+            <input
+              type="password"
+              id="apiKey"
+              placeholder="Enter your API key"
+              value="default-api-key-12345"
+              autocomplete="off"
+            />
+          </div>
+
+          <button id="calculateBtn" type="button">Calculate</button>
+        </div>
+
+        <div id="result" class="result-container">
+          <div class="result-header">Result:</div>
+          <div id="resultValue" class="result-value">
+            Enter an expression to calculate
+          </div>
+        </div>
+
+        <div id="error" class="error-container hidden">
+          <div class="error-header">Error:</div>
+          <div id="errorMessage" class="error-message"></div>
+        </div>
+      </main>
+
+      <!-- <footer>
+            <div class="examples">
+                <h3>Example expressions:</h3>
+                <ul>
+                    <li>2 + 3 * 4 = 14</li>
+                    <li>(2 + 3) * 4 = 20</li>
+                    <li>10 / 2 - 3 = 2</li>
+                    <li>-5 + 8 = 3</li>
+                </ul>
+            </div>
+        </footer> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
